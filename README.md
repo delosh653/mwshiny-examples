@@ -1,5 +1,9 @@
 # mwshiny-examples: Examples for Multi-Window Shiny
 
+<p align="center">
+<img src="all_example_pic.png"/>
+</p>
+
 ## Overview
 
 This repository is a small set of examples for the mwshiny package in R for various multi-monitor situations, as presented at useR! 2019 in Toulouse, France. The examples demonstrate the following:
