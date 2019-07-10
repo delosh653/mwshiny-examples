@@ -13,11 +13,13 @@ This repository is a small set of examples for the mwshiny package in R for vari
 1. Download [R](https://www.r-project.org/) and [RStudio](https://www.rstudio.com/products/rstudio/download/).
 2. Download/clone this repository.
 3. After opening RStudio, open the main R script of the example you're interested in, listed below:
+
 | Folder | R Script |
 | ------------- | ------------- |
 | pop  | pop_mwshiny.R  |
 | art  | art_app.R  |
 | health  | encore_demo.R  |
+
 4. Install all packages required (these are listed at the beginning of the script) using the function `install.packages()` or the corresponding Bioconductor installation code.
 5. For both the pop and art examples, you will need a Mapbox access token. You can get that [here](https://www.mapbox.com/studio/). Once you have that token replace the empty string in the following code in the script with your Mapbox token:
 ```r
@@ -33,6 +35,7 @@ key <- ""
 ## Data Information
 
 Data for each of the examples come from:
+
 | Example | Source |
 | ------------- | ------------- |
 | pop  | US Census 2010  |
