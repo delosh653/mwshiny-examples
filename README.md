@@ -6,7 +6,7 @@
 
 ## Overview
 
-This repository is a small set of examples for the mwshiny package in R for various multi-monitor situations, as presented at useR! 2019 in Toulouse, France. The examples demonstrate the following:
+This repository is a small set of examples for the mwshiny package in R for various multi-monitor situations, as presented at useR! 2019 in Toulouse, France. Presentation slides from this conference can be downloaded as well, as either a .pptx or a .pdf under the title "Presentation useR 7 10 19". The examples demonstrate the following:
 
 1. Multiple Monitors at a Workstation (Population Dynamics): folder "pop"
 2. Controller Driving External Monitor (Cultural Exploration through Art): folder "art"
