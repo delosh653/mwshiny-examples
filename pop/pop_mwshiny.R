@@ -323,14 +323,6 @@ serv_out[["map"]] <- function(calc, sess){
   })
 }
 
-serv_out[["map"]] <- function(calc, sess){
-  renderPlotly({
-      calc$merge_pop %>%
-        group_by(group) %>%
-        plot_mapbox()...
-  })
-}
-
 # RUN ----
 
 depend <- list()
