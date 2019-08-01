@@ -29,8 +29,6 @@ paint_content <- function(num, calc){
 
 # UI ----
 
-win_titles <- c("Controller","Art_Monitor")
-
 ui_list <- list()
 
 ui_list[["Controller"]] <- fluidPage(
@@ -174,19 +172,6 @@ serv_out[["map"]] <- function(calc, sess){
   })
 }
 
-# DEPENDS ----
-
-depend <- list()
-depend[["htmlwidgets"]] <- c("www/htmlwidgets.js")
-depend[["shiny"]] <- c("www/shared/selectize/js/selectize.min.js",
-                       "www/shared/selectize/css/selectize.bootstrap3.css")
-depend[["plotly"]] <- c("htmlwidgets/lib/plotlyjs/plotly-latest.min.js",
-                        "htmlwidgets/lib/plotlyjs/plotly-htmlwidgets.css",
-                        "htmlwidgets/plotly.js",
-                        "htmlwidgets/lib/typedarray/typedarray.min.js")
-depend[["crosstalk"]] <- c("www/css/crosstalk.css",
-                           "www/js/crosstalk.min.js")
-
 # RUN ----
 
-mwsApp(win_titles, ui_list, serv_calc, serv_out, depend)
+mwsApp(ui_list, serv_calc, serv_out)

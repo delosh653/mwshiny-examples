@@ -128,9 +128,6 @@ dat_list <- list("State_Count"=data2010_state_counts,
 
 # UI -----
 
-# window titles
-win_titles <- c("Controller", "Map")
-
 # preallocating our user interfaces for each window
 ui_list <- list()
 
@@ -323,17 +320,7 @@ serv_out[["map"]] <- function(calc, sess){
   })
 }
 
+
 # RUN ----
 
-depend <- list()
-depend[["htmlwidgets"]] <- c("www/htmlwidgets.js")
-depend[["shiny"]] <- c("www/shared/selectize/js/selectize.min.js",
-                       "www/shared/selectize/css/selectize.bootstrap3.css")
-depend[["plotly"]] <- c("htmlwidgets/lib/plotlyjs/plotly-latest.min.js",
-                        "htmlwidgets/lib/plotlyjs/plotly-htmlwidgets.css",
-                        "htmlwidgets/plotly.js",
-                        "htmlwidgets/lib/typedarray/typedarray.min.js")
-depend[["crosstalk"]] <- c("www/css/crosstalk.css",
-                           "www/js/crosstalk.min.js")
-
-mwsApp(win_titles, ui_list, serv_calc, serv_out, depend)
+mwsApp(ui_list, serv_calc, serv_out)

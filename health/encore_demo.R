@@ -90,8 +90,6 @@ if (user_input$run_conf){
 
 # UI ----
 
-win_titles <- c("Controller", "Wall", "Floor")
-
 ui_win <- list()
 
 ui_win[["Controller"]] <- fluidPage(
@@ -561,23 +559,6 @@ serv_out[["floor"]] <- function(serverValues, sess){
   })
 }
 
-# DEPEND ----
-
-depend <- list()
-depend[["htmlwidgets"]] <- c("www/htmlwidgets.js")
-depend[["shiny"]] <- c("www/shared/selectize/js/selectize.min.js",
-                       "www/shared/selectize/css/selectize.bootstrap3.css",
-                       "www/shared/fontawesome/css/all.min.css",
-                       "www/shared/fontawesome/css/v4-shims.min.css",
-                       "www/shared/datatables/js/jquery.dataTables.min.js",
-                       "www/shared/datatables/js/dataTables.bootstrap.js",
-                       "www/shared/datatables/css/dataTables.bootstrap.css",
-                       "www/shared/datatables/css/dataTables.extra.css")
-depend[["r2d3"]] <- c("htmlwidgets/lib/r2d3/r2d3-render.js",
-                      "htmlwidgets/lib/webcomponents/webcomponents.js",
-                      "htmlwidgets/r2d3.js",
-                      "www/d3/5.0.0/d3.min.js")
-
 # RUN ----
 
-mwsApp(win_titles, ui_win, serv_calc, serv_out, depend)
+mwsApp(ui_win, serv_calc, serv_out)
