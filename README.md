@@ -49,5 +49,4 @@ Data for each of the examples come from:
 ## Contact
 
 Hannah De los Santos /
-email: delosh@rpi.edu /
-Rensselaer Polytechnic Institute
+email: hdelossantos653 at gmail.com
